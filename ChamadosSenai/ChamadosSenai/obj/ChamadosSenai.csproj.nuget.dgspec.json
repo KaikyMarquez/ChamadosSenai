@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kaiky\\Desktop\\Chamados Senai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj": {}
+    "C:\\Users\\Kaiky\\Documents\\GitHub\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kaiky\\Desktop\\Chamados Senai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj": {
+    "C:\\Users\\Kaiky\\Documents\\GitHub\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaiky\\Desktop\\Chamados Senai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj",
+        "projectUniqueName": "C:\\Users\\Kaiky\\Documents\\GitHub\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj",
         "projectName": "ChamadosSenai",
-        "projectPath": "C:\\Users\\Kaiky\\Desktop\\Chamados Senai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj",
+        "projectPath": "C:\\Users\\Kaiky\\Documents\\GitHub\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj",
         "packagesPath": "C:\\Users\\Kaiky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaiky\\Desktop\\Chamados Senai\\ChamadosSenai\\ChamadosSenai\\obj\\",
+        "outputPath": "C:\\Users\\Kaiky\\Documents\\GitHub\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kaiky\\AppData\\Roaming\\NuGet\\NuGet.Config",

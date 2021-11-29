@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LObg6hE+trzH45HMyO/P4wJoR9b2jRIroH6erZBPCg4n4vd68WpqyiuY4kZGqV/iXISt8iPBhjeTHc5GB3BzIQ==",
+  "dgSpecHash": "u8IYcYuSSLxMXdaCooSQDd8wytkdKYaQxeIN62z7aM8o1HVKNeTNNhdXi6a+9NcKlC43SLv+yE/ZYjR4h+PCiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kaiky\\Desktop\\Chamados Senai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj",
+  "projectFilePath": "C:\\Users\\Kaiky\\Documents\\GitHub\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai\\ChamadosSenai.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kaiky\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kaiky\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
