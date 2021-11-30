@@ -8,7 +8,7 @@ namespace ChamadosSenai.Domains
 {
     public partial class Usuario
     {
-        [Required(ErrorMessage = "TipoUsuario do Usuario é obrigatorio")]
+        
         public int? IdTipoUsuario { get; set; }
 
         public Guid IdUsuario { get; set; }

@@ -44,6 +44,7 @@ namespace ChamadosSenai.Repositories
             return ctx.Usuarios.Find(idUsuario);
         }
 
+ 
         public void Cadastrar(Usuario novoUsuario)
         {
             ctx.Usuarios.Add(novoUsuario);
@@ -61,5 +62,12 @@ namespace ChamadosSenai.Repositories
         {
             return ctx.Usuarios.ToList();
         }
+
+
+        public Usuario Login(string EmailUsuario, string SenhaUsuario)
+        {
+            return ctx.Usuarios.FirstOrDefault(l => l.EmailUsuario == EmailUsuario && l.SenhaUsuario == SenhaUsuario);
+        }
+
     }
  }

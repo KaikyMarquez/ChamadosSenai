@@ -18,6 +18,6 @@ namespace ChamadosSenai.Interfaces
 
         void Deletar(int idUsuario);
 
-
+        public Usuario Login(string EmailUsuario, string SenhaUsuario);
     }
 }

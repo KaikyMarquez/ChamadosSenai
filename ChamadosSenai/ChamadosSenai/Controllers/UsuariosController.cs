@@ -92,6 +92,8 @@ namespace ChamadosSenai.Controllers
                 return BadRequest(erro);
             }
 
+
+
         }
 
     }
