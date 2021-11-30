@@ -42,6 +42,7 @@ namespace ChamadosSenai.Controllers
                     new Claim (JwtRegisteredClaimNames.Jti, Login.IdUsuario.ToString()),
                     new Claim(ClaimTypes.Role, Login.IdTipoUsuario.ToString())
 
+
                 };
 
                 var Key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("senha-chamadosSenai"));
@@ -53,6 +54,7 @@ namespace ChamadosSenai.Controllers
                     issuer: "ChamadosSenai.API",
                     audience: "ChamadosSenai.API",
                     claims: claim,
+                    expires: DateTime.Now.AddHours(24),
                     signingCredentials: creds
                 );
 

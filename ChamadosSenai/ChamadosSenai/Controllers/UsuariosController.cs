@@ -1,6 +1,7 @@
 ﻿using ChamadosSenai.Domains;
 using ChamadosSenai.Interfaces;
 using ChamadosSenai.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace ChamadosSenai.Controllers
         {
             _usuarioRepository = new UsuarioRepository();
         }
-
+        [Authorize(Roles = "4")]
         [HttpGet]
         public IActionResult ListarTodos()
         {
