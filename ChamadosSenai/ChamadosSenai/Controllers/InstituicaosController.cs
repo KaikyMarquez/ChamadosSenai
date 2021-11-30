@@ -1,6 +1,7 @@
 ﻿using ChamadosSenai.Domains;
 using ChamadosSenai.Interfaces;
 using ChamadosSenai.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,8 @@ namespace ChamadosSenai.Controllers
             _InstituicaoRepository = new InstituicaoRepository();
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -35,6 +38,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpGet("idInstituicao")]
         public IActionResult BuscarPorId(int idInstituicao)
         {
@@ -48,6 +53,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpPost]
         public IActionResult Cadastrar(Instituicao InstituicaoCadastrado)
         {
@@ -63,6 +70,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpPut("{idInstituicao}")]
         public IActionResult Atualizar(int idInstituicao, Instituicao InstituicaoAtualizado)
         {
@@ -78,6 +87,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpDelete("{idInstituicao}")]
         public IActionResult Deletar(int idInstituicao)
         {
@@ -93,7 +104,5 @@ namespace ChamadosSenai.Controllers
             }
 
         }
-
-
     }
 }

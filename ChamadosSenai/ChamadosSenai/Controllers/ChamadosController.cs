@@ -1,6 +1,7 @@
 ﻿using ChamadosSenai.Domains;
 using ChamadosSenai.Interfaces;
 using ChamadosSenai.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,8 @@ namespace ChamadosSenai.Controllers
             _ChamadoRepository = new ChamadoRepository();
         }
 
+
+        [Authorize(Roles = "1,2,3,4")]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -35,6 +38,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "1,2,3,4")]
         [HttpGet("idChamado")]
         public IActionResult BuscarPorId(int idChamado)
         {
@@ -48,6 +53,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "1,2,3,4")]
         [HttpPost]
         public IActionResult Cadastrar(Chamado ChamadoCadastrado)
         {
@@ -63,6 +70,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "1,2,3,4")]
         [HttpPut("{idChamado}")]
         public IActionResult Atualizar(int idChamado, Chamado ChamadoAtualizado)
         {
@@ -78,6 +87,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "1,2,3,4")]
         [HttpDelete("{idChamado}")]
         public IActionResult Deletar(int idChamado)
         {
@@ -93,8 +104,5 @@ namespace ChamadosSenai.Controllers
             }
 
         }
-
-
-
     }
 }

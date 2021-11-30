@@ -22,6 +22,7 @@ namespace ChamadosSenai.Controllers
         {
             _usuarioRepository = new UsuarioRepository();
         }
+
         [Authorize(Roles = "4")]
         [HttpGet]
         public IActionResult ListarTodos()
@@ -36,6 +37,7 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+        [Authorize(Roles = "4")]
         [HttpGet("idUsuario")]
         public IActionResult BuscarPorId(int idUsuario)
         {
@@ -49,6 +51,7 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+        [Authorize(Roles = "4")]
         [HttpPost]
         public IActionResult Cadastrar(Usuario usuarioCadastrado)
         {
@@ -64,6 +67,7 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+        [Authorize(Roles = "4")]
         [HttpPut("{idUsuario}")]
         public IActionResult Atualizar(int idUsuario, Usuario usuarioAtualizado)
         {
@@ -79,6 +83,7 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+        [Authorize(Roles = "4")]
         [HttpDelete("{idUsuario}")]
         public IActionResult Deletar(int idUsuario)
         {

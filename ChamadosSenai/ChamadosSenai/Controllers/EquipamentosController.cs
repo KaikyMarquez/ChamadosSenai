@@ -1,6 +1,7 @@
 ﻿using ChamadosSenai.Domains;
 using ChamadosSenai.Interfaces;
 using ChamadosSenai.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace ChamadosSenai.Controllers
             _EquipamentoRepository = new EquipamentoRepository();
         }
 
+
+        [Authorize(Roles = "2,4")]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -34,6 +37,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "2,4")]
         [HttpGet("idEquipamento")]
         public IActionResult BuscarPorId(int idEquipamento)
         {
@@ -47,6 +52,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "2,4")]
         [HttpPost]
         public IActionResult Cadastrar(Equipamento EquipamentoCadastrado)
         {
@@ -62,6 +69,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "2,4")]
         [HttpPut("{idEquipamento}")]
         public IActionResult Atualizar(int idEquipamento, Equipamento EquipamentoAtualizado)
         {
@@ -77,6 +86,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "2,4")]
         [HttpDelete("{idEquipamento}")]
         public IActionResult Deletar(int idEquipamento)
         {
@@ -92,11 +103,5 @@ namespace ChamadosSenai.Controllers
             }
 
         }
-
-
-
-
-
-
     }
 }

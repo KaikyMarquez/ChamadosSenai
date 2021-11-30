@@ -1,6 +1,7 @@
 ﻿using ChamadosSenai.Domains;
 using ChamadosSenai.Interfaces;
 using ChamadosSenai.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,8 @@ namespace ChamadosSenai.Controllers
             _TipoUsuarioRepository = new TipoUsuarioRepository();
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -35,6 +38,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpGet("idTipoUsuario")]
         public IActionResult BuscarPorId(int idTipoUsuario)
         {
@@ -48,6 +53,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpPost]
         public IActionResult Cadastrar(TipoUsuario TipoUsuarioCadastrado)
         {
@@ -63,6 +70,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpPut("{idTipoUsuario}")]
         public IActionResult Atualizar(int idTipoUsuario, TipoUsuario TipoUsuarioAtualizado)
         {
@@ -78,6 +87,8 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
+        [Authorize(Roles = "4")]
         [HttpDelete("{idTipoUsuario}")]
         public IActionResult Deletar(int idTipoUsuario)
         {
@@ -91,12 +102,6 @@ namespace ChamadosSenai.Controllers
             {
                 return BadRequest(erro);
             }
-
         }
-
-
-
-
-
     }
 }
