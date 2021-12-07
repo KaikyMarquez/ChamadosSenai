@@ -29,7 +29,7 @@ Values					(1,'Switch Cisco 2960', 'Switch de 24 Portas em otimo estado');
 go
 
 Insert Into Chamado (IdUsuario,IdInstituicao,Localizacao,Motivo,Descricao,IdReceberChamado)
-Values				('ECBF1424-6AD6-4CD8-993C-673472B57998',1,'3º Andar','Limpeza','Suco no chão, proximo ao bebedouro','B1B049C5-D17C-4EBF-9F64-5E991EECEB01');
+Values				('FE297A6E-3A19-4A17-A7EA-34D61C913CC5',1,'3º Andar','Limpeza','Suco no chão, proximo ao bebedouro','387BA4E9-DBEC-4C43-84D2-8F1C6F2AB045');
 
 
 
@@ -45,3 +45,5 @@ SELECT*FROM Instituicao
 SELECT*FROM Equipamento
 
 SELECT*FROM Chamado
+
+DELETE from Usuario WHERE id=0602B448-D542-409E-B225-13D7726E96DD

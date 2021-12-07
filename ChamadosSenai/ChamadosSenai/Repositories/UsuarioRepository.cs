@@ -52,9 +52,9 @@ namespace ChamadosSenai.Repositories
             ctx.SaveChanges();
         }
 
-        public void Deletar(int idUsuario)
+        public void Deletar(int IdUsuario)
         {
-            ctx.Usuarios.Remove(BuscarPorId(idUsuario));
+            ctx.Usuarios.Remove(BuscarPorId(IdUsuario));
             ctx.SaveChanges();
         }
 

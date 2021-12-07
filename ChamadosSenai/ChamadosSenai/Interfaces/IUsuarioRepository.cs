@@ -16,7 +16,7 @@ namespace ChamadosSenai.Interfaces
 
         void Atualizar(int idUsuario, Usuario UsuarioAtualizado);
 
-        void Deletar(int idUsuario);
+        void Deletar(int IdUsuario);
 
         public Usuario Login(string EmailUsuario, string SenhaUsuario);
     }

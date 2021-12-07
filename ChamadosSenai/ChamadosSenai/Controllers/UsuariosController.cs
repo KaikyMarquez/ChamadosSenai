@@ -37,6 +37,7 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
         [Authorize(Roles = "4")]
         [HttpGet("idUsuario")]
         public IActionResult BuscarPorId(int idUsuario)
@@ -50,6 +51,7 @@ namespace ChamadosSenai.Controllers
                 return BadRequest(erro);
             }
         }
+
 
         [Authorize(Roles = "4")]
         [HttpPost]
@@ -67,6 +69,7 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
         [Authorize(Roles = "4")]
         [HttpPut("{idUsuario}")]
         public IActionResult Atualizar(int idUsuario, Usuario usuarioAtualizado)
@@ -83,13 +86,14 @@ namespace ChamadosSenai.Controllers
             }
         }
 
+
         [Authorize(Roles = "4")]
         [HttpDelete("{idUsuario}")]
-        public IActionResult Deletar(int idUsuario)
+        public IActionResult Deletar(int IdUsuario)
         {
             try
             {
-                _usuarioRepository.Deletar(idUsuario);
+                _usuarioRepository.Deletar(IdUsuario);
 
                 return StatusCode(204);
             }
@@ -97,10 +101,6 @@ namespace ChamadosSenai.Controllers
             {
                 return BadRequest(erro);
             }
-
-
-
         }
-
     }
 }
